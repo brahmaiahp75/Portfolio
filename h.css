@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(43, 40, 34);
+    color: rgb(255, 15, 15);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /*background-image:url(image.jpg);*/
+    
+    background-size:cover;
+    background-position:center;
+    border-radius: 100px;
+    
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    padding:10px 10%;
+    
+}
+nav{
+    display: flex;
+    margin-left: 650px;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    
+    
+}
+.logo{
+    width:50%;
+    border-radius: 30px;
+    border-style: dotted;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px;
+    
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    color: rgb(84, 245, 10);
+    font-weight: 500px;
+    
+
+}
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height:3px;
+    background:rgb(237, 33, 33);
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+
+
+
+}
+nav ul li a:hover::after{
+    width:100%;
+    font-size: 30px;
+
+}
+.header-text{
+   
+   /* background-image:url(image.jpg);*/
+    background-size: cover;
+    background-position: left;
+    border-radius: 10px;
+    height: 90vh;
+    margin-top: -100px;
+    margin-left: -50px;
+}
+.h{
+
+    font-weight: 200px;
+     background:wheat; 
+    width: 250px;
+    padding: 10px;
+    margin-left:180px;
+    margin-top:20px;
+    border-radius: 10px;
+    border-style: double;
+}
+.ic{
+    padding: 40px;
+    margin-left: 30px;
+    font-size: 40px;
+    display: flex;
+    
+}
+.ins{
+    margin-left: 20px;
+    padding: 10px;
+}
+.ins:hover{
+    font-size: 50px;
+    text-decoration-style: double;
+    
+    
+}
+.ic bi bi-instagram:hover{
+    font-size: 50px;
+}
+.i img{
+    margin-left: 750px;
+    margin-top: -500px;
+    margin-bottom: 300px;
+    width: 600px;
+    height:600px;
+    border-radius: 360px;
+    
+}
+.i img:hover{
+    height:650px;
+    width:750px;
+    border-radius: 360px;
+    border-style:groove;
+}
+.header-text:hover{
+    background-size: 1000px;
+    border-top-color: aliceblue;
+
+}
+.header-text h1{
+    margin-top:10px;
+    font-size:60px;
+}
+.header-text h1 span{
+    color:whitesmoke;
+}
+#about{
+    padding:80px 0%;
+    color:whitesmoke;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.about-col-1{
+    flex-basis:35%;
+
+}
+.about-col-1 img{
+    width:80%;
+    border-radius:15px;
+    border-style:groove
+
+}
+.about-col-1 img:hover{
+    width:100%
+}
+
+.about-col-2{
+    flex-basis:60%;
+    
+    
+
+}
+.sub{
+    font-size:60px;
+    font-weight:600;
+    color:wheat;
+    margin-bottom: 10px;
+    margin-left: -60px;
+
+}
+.tab{
+    display:flex;
+    margin:20px 0 40px;
+    
+
+}
+.links{
+    margin-right:50px;
+    font-size:35px;
+    font-weight:500;
+    cursor:pointer;
+    position:relative;
+    color: wheat;
+
+}
+.links::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.5s;
+
+}
+.links.active::after{
+    width:50%;
+}
+.tab-content ul li{
+    list-style: circle;
+    margin:10px 6px;
+    
+
+}
+.tab-content ul li span{
+    list-style: none;
+    color:purple;
+    font-size:35px;
+    
+
+}
+.table-content table, th,td{
+    text-align:center;
+    padding:10px;
+    border:1px solid rgb(202, 34, 34);
+    border-radius: 5px;
+    border-style:dotted;
+    
+}
+.tab-content{
+    display: none;
+}
+
+
+.tab-content.active-tab{
+    display:block;
+
+}
+.cer{
+
+    margin-left: 200px;
+    font-size:30px;
+    color:white;
+    margin-bottom: 20px;
+    
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+}
+.contact-left{
+    flex-basis:35%
+}
+.contact-right{
+    flex-basis:60%
+}
+.em{
+    width:300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color:blue;
+    border-radius: 10px;
+    padding:15px;
+    border-style: groove;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.em:hover{
+    background: black;
+}
+.c{
+    text-decoration: none;
+    margin-left: -350px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    background-color: blue;
+    border-radius: 10px;
+    padding:20px;
+    font-size: 30px;
+    font-weight: 100px;
+    text-align: center;
+    cursor: pointer;    
+}
+.c:hover{
+    background-color: red;
+    font-size: 50px;
+}
+.contact-left p{
+    margin-top:30px;
+}
+.btn.btn2{
+    padding:10px;
+    display: inline-block;
+    background-color: red;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 20px;
+    
+}
+.btn.btn2:hover{
+    background-color: blue;
+}
+.contact-right form{
+    width:100%;
+}
+form input,form textarea{
+    margin-top: 10px;
+    width:100%;
+    border:0;
+    outline:none;
+    background:yellow;
+    padding:15px;
+    margin:15px;
+    color:black;
+    font-size:18px;
+    border-radius:6px;
+
+
+}
+/*project*/
+.pro{
+    width: 300px;
+    background: red;
+    padding:15px;
+    border-radius: 10px;
+    margin-left: 30px;
+    font-size: 50px;
+    border-style: dotted;
+
+}
+.pro:hover{
+    background:blue;
+}
+.pro1-arc{
+    font-size:20px;
+    margin-left: 40px;
+    width: 200px;
+    background: black;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 5px;
+    border-style: dotted;
+}
+.pro1-arc:hover{
+    background: blue;
+}
+
+
+
+
+
+
+ 
